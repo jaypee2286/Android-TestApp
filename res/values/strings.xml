@@ -8,13 +8,15 @@
     <string name="done">Done</string>
     <string name="done2">Done2</string>
     <string name="label_items">Items</string>
-    <string name="label_itemCost1">0.00</string>
+    <string name="label_0.00">0.00</string>
     <string name="label_itemCost">Cost</string>
     <string name="label_dollarsign">$</string>
     <string name="label_itemName">Item Name</string>
+    <string name="label_newItem">New Item</string>
     <string name="label_guestName">Guest 1</string>
     <string name="label_addItem">Add Item</string>
     <string name="label_ok">OK</string>
+    <string name="label_calculate">Calculate</string>
 
     <string-array name="times_array">
         <item>one</item>

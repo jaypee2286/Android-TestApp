@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:id="@+id/prompt_linearlayout_1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
 
@@ -25,7 +25,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="7"
-            android:hint="@string/label_itemName" >
+            android:hint="@string/label_itemName"
+            android:text="@string/label_newItem"
+            android:selectAllOnFocus="true" >
 
             <requestFocus />
         </EditText>
@@ -50,7 +52,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="7"
-            android:hint="@string/label_itemCost" />
+            android:hint="@string/label_itemCost"
+            android:text="@string/label_0.00"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true" />
     </LinearLayout>
     
 

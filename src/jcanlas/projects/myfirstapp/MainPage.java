@@ -27,6 +27,7 @@ public class MainPage extends Activity {
 	private EditText itemName_input;
 	private EditText itemCost_input;
 	private Button buttonAdd;
+	private Button buttonCalculate;
 	private LinearLayout container;
 	private int numberOfDiners = 0;
 	private int currentDiner = 0;
@@ -47,21 +48,22 @@ public class MainPage extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main_page);
 
+		// attach objects to android UI elements
 		itemCost = (EditText) findViewById(R.id.addItems_itemCost);
 		itemName = (EditText) findViewById(R.id.addItems_itemName);
 		itemCost_input = (EditText) findViewById(R.id.prompt_itemCost);
 		itemName_input = (EditText) findViewById(R.id.prompt_itemName);
-		/*
-		 * textIn = (EditText) findViewById(R.id.item_cost); itemName =
-		 * (EditText) findViewById(R.id.item_name); itemCost = (EditText)
-		 * findViewById(R.id.item_cost);
-		 */
+
 		buttonAdd = (Button) findViewById(R.id.diner_buttonAddItem);
+		buttonCalculate = (Button) findViewById(R.id.diner_buttonCalculate);
 
 		container = (LinearLayout) findViewById(R.id.container);
 
+		// create a Diner object
 		Diner guest1 = new Diner();
 
+		
+		// when the ADD button is pressed:
 		buttonAdd.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -70,6 +72,20 @@ public class MainPage extends Activity {
 			}
 		});
 
+		
+		// when the CALCULATE button is pressed:
+		buttonCalculate.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				calculate();
+			}
+		});
+
+	}
+	
+	public void calculate() {
+		
 	}
 
 	public void addItemPrompt() {
