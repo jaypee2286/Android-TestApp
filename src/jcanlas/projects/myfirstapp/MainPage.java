@@ -61,7 +61,6 @@ public class MainPage extends Activity {
 
 		// create a Diner object
 		Diner guest1 = new Diner();
-
 		
 		// when the ADD button is pressed:
 		buttonAdd.setOnClickListener(new OnClickListener() {
