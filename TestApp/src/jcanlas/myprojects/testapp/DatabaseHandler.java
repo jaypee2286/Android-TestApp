@@ -7,7 +7,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
 import android.content.ContentValues;
 
 public class DatabaseHandler extends SQLiteOpenHelper {
@@ -36,7 +35,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 				+ KEY_NAME + " TEXT" + ")";
 		db.execSQL(CREATE_TEAMS_TABLE);
 	}
-	
+
 	// Upgrading DB
 	@Override
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
@@ -45,7 +44,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 		// Recreate tables
 		onCreate(db);
 	}
-	
+
 	// Adding new team
 	public void addTeam(Team team) {
 		SQLiteDatabase db = this.getWritableDatabase();

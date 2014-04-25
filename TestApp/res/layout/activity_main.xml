@@ -26,7 +26,7 @@
         android:textSize="18dp" />
 
     <ScrollView
-        android:id="@+id/SCROLLER_VIEW"
+        android:id="@+id/scroller_view"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:scrollbars="vertical" >
